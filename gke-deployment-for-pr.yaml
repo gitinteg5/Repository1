@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    labels:
+        app: opencost
+    name: opencost
+    namespace: opencost
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: opencost
+    template:
+        metadata:
+            creationTimestamp: null
+            labels:
+                app: opencost
+        spec:
+            containers:
+                - env:
+                    - name: PROMETHEUS_SERVER_ENDPOINT
+                      value: http://my-prometheus-server.prometheus.svc
+                    - name: CLOUD_PROVIDER_API_KEY
+                      value: AIzaSyD29bGxmHAVEOBYtgd8sYM2gM2ekfxQX4U
+                    - name: CLUSTER_ID
+                      value: cluster-one
+                  image: quay.io/kubecost1/kubecost-cost-model:latest
+                  imagePullPolicy: Always
+                  name: opencost
+                  resources:
+                    limits:
+                        cpu: 999m
+                        memory: 1G
+                    requests:
+                        cpu: 10m
+                        memory: 55M
+                - image: quay.io/kubecost1/opencost-ui:latest
+                  imagePullPolicy: Always
+                  name: opencost-ui
+                  resources:
+                    limits:
+                        cpu: 999m
+                        memory: 1G
+                    requests:
+                        cpu: 10m
+                        memory: 55M
+            dnsPolicy: ClusterFirst
+            restartPolicy: Always
+            serviceAccount: opencost
+            serviceAccountName: opencost
+            terminationGracePeriodSeconds: 30
