@@ -1,0 +1,314 @@
+{
+    "format_version": "1.0",
+    "terraform_version": "1.1.9",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_bucket.b",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket",
+                    "name": "b",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "acceleration_status": "",
+                        "acl": "private",
+                        "arn": "arn:aws:s3:::airadier-s3-public-bucket",
+                        "bucket": "airadier-s3-public-bucket",
+                        "bucket_domain_name": "airadier-s3-public-bucket.s3.amazonaws.com",
+                        "bucket_prefix": null,
+                        "bucket_regional_domain_name": "airadier-s3-public-bucket.s3.amazonaws.com",
+                        "cors_rule": [],
+                        "force_destroy": false,
+                        "grant": [],
+                        "hosted_zone_id": "Z3AQBSTGFYJSTF",
+                        "id": "airadier-s3-public-bucket",
+                        "lifecycle_rule": [],
+                        "logging": [],
+                        "object_lock_configuration": [],
+                        "object_lock_enabled": false,
+                        "policy": null,
+                        "region": "us-east-1",
+                        "replication_configuration": [],
+                        "request_payer": "BucketOwner",
+                        "server_side_encryption_configuration": [],
+                        "tags": {
+                            "Name": "airadier test S3 bucket with public access"
+                        },
+                        "tags_all": {
+                            "Name": "airadier test S3 bucket with public access"
+                        },
+                        "versioning": [
+                            {
+                                "enabled": false,
+                                "mfa_delete": false
+                            }
+                        ],
+                        "website": [],
+                        "website_domain": null,
+                        "website_endpoint": null
+                    },
+                    "sensitive_values": {
+                        "cors_rule": [],
+                        "grant": [],
+                        "lifecycle_rule": [],
+                        "logging": [],
+                        "object_lock_configuration": [],
+                        "replication_configuration": [],
+                        "server_side_encryption_configuration": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "versioning": [
+                            {}
+                        ],
+                        "website": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_s3_bucket.b",
+            "mode": "managed",
+            "type": "aws_s3_bucket",
+            "name": "b",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "no-op"
+                ],
+                "before": {
+                    "acceleration_status": "",
+                    "acl": "private",
+                    "arn": "arn:aws:s3:::airadier-s3-public-bucket",
+                    "bucket": "airadier-s3-public-bucket",
+                    "bucket_domain_name": "airadier-s3-public-bucket.s3.amazonaws.com",
+                    "bucket_prefix": null,
+                    "bucket_regional_domain_name": "airadier-s3-public-bucket.s3.amazonaws.com",
+                    "cors_rule": [],
+                    "force_destroy": false,
+                    "grant": [],
+                    "hosted_zone_id": "Z3AQBSTGFYJSTF",
+                    "id": "airadier-s3-public-bucket",
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "object_lock_configuration": [],
+                    "object_lock_enabled": false,
+                    "policy": null,
+                    "region": "us-east-1",
+                    "replication_configuration": [],
+                    "request_payer": "BucketOwner",
+                    "server_side_encryption_configuration": [],
+                    "tags": {
+                        "Name": "airadier test S3 bucket with public access"
+                    },
+                    "tags_all": {
+                        "Name": "airadier test S3 bucket with public access"
+                    },
+                    "versioning": [
+                        {
+                            "enabled": false,
+                            "mfa_delete": false
+                        }
+                    ],
+                    "website": [],
+                    "website_domain": null,
+                    "website_endpoint": null
+                },
+                "after": {
+                    "acceleration_status": "",
+                    "acl": "private",
+                    "arn": "arn:aws:s3:::airadier-s3-public-bucket",
+                    "bucket": "airadier-s3-public-bucket",
+                    "bucket_domain_name": "airadier-s3-public-bucket.s3.amazonaws.com",
+                    "bucket_prefix": null,
+                    "bucket_regional_domain_name": "airadier-s3-public-bucket.s3.amazonaws.com",
+                    "cors_rule": [],
+                    "force_destroy": false,
+                    "grant": [],
+                    "hosted_zone_id": "Z3AQBSTGFYJSTF",
+                    "id": "airadier-s3-public-bucket",
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "object_lock_configuration": [],
+                    "object_lock_enabled": false,
+                    "policy": null,
+                    "region": "us-east-1",
+                    "replication_configuration": [],
+                    "request_payer": "BucketOwner",
+                    "server_side_encryption_configuration": [],
+                    "tags": {
+                        "Name": "airadier test S3 bucket with public access"
+                    },
+                    "tags_all": {
+                        "Name": "airadier test S3 bucket with public access"
+                    },
+                    "versioning": [
+                        {
+                            "enabled": false,
+                            "mfa_delete": false
+                        }
+                    ],
+                    "website": [],
+                    "website_domain": null,
+                    "website_endpoint": null
+                },
+                "after_unknown": {},
+                "before_sensitive": {
+                    "cors_rule": [],
+                    "grant": [],
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "object_lock_configuration": [],
+                    "replication_configuration": [],
+                    "server_side_encryption_configuration": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "versioning": [
+                        {}
+                    ],
+                    "website": []
+                },
+                "after_sensitive": {
+                    "cors_rule": [],
+                    "grant": [],
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "object_lock_configuration": [],
+                    "replication_configuration": [],
+                    "server_side_encryption_configuration": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "versioning": [
+                        {}
+                    ],
+                    "website": []
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.1.9",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "aws_s3_bucket.b",
+                        "mode": "managed",
+                        "type": "aws_s3_bucket",
+                        "name": "b",
+                        "provider_name": "registry.terraform.io/hashicorp/aws",
+                        "schema_version": 0,
+                        "values": {
+                            "acceleration_status": "",
+                            "acl": "private",
+                            "arn": "arn:aws:s3:::airadier-s3-public-bucket",
+                            "bucket": "airadier-s3-public-bucket",
+                            "bucket_domain_name": "airadier-s3-public-bucket.s3.amazonaws.com",
+                            "bucket_prefix": null,
+                            "bucket_regional_domain_name": "airadier-s3-public-bucket.s3.amazonaws.com",
+                            "cors_rule": [],
+                            "force_destroy": false,
+                            "grant": [],
+                            "hosted_zone_id": "Z3AQBSTGFYJSTF",
+                            "id": "airadier-s3-public-bucket",
+                            "lifecycle_rule": [],
+                            "logging": [],
+                            "object_lock_configuration": [],
+                            "object_lock_enabled": false,
+                            "policy": null,
+                            "region": "us-east-1",
+                            "replication_configuration": [],
+                            "request_payer": "BucketOwner",
+                            "server_side_encryption_configuration": [],
+                            "tags": {
+                                "Name": "airadier test S3 bucket with public access"
+                            },
+                            "tags_all": {
+                                "Name": "airadier test S3 bucket with public access"
+                            },
+                            "versioning": [
+                                {
+                                    "enabled": false,
+                                    "mfa_delete": false
+                                }
+                            ],
+                            "website": [],
+                            "website_domain": null,
+                            "website_endpoint": null
+                        },
+                        "sensitive_values": {
+                            "cors_rule": [],
+                            "grant": [],
+                            "lifecycle_rule": [],
+                            "logging": [],
+                            "object_lock_configuration": [],
+                            "replication_configuration": [],
+                            "server_side_encryption_configuration": [],
+                            "tags": {},
+                            "tags_all": {},
+                            "versioning": [
+                                {}
+                            ],
+                            "website": []
+                        }
+                    },
+                    {
+                        "address": "data.aws_canonical_user_id.current",
+                        "mode": "data",
+                        "type": "aws_canonical_user_id",
+                        "name": "current",
+                        "provider_name": "registry.terraform.io/hashicorp/aws",
+                        "schema_version": 0,
+                        "values": {
+                            "display_name": "opsadmin+demo",
+                            "id": "65ce113e3d99c0c6dc68db3dd304ebae6b2de8a1737e231593479bf51add2c18"
+                        },
+                        "sensitive_values": {}
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "version_constraint": "~\u003e 3.0"
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_bucket.b",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket",
+                    "name": "b",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "bucket": {
+                            "constant_value": "airadier-s3-public-bucket"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "Name": "airadier test S3 bucket with public access"
+                            }
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.aws_canonical_user_id.current",
+                    "mode": "data",
+                    "type": "aws_canonical_user_id",
+                    "name": "current",
+                    "provider_config_key": "aws",
+                    "schema_version": 0
+                }
+            ]
+        }
+    }
+}
